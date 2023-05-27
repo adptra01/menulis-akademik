@@ -1,9 +1,9 @@
 <x-app>
     <x-slot name="title">Home</x-slot>
     <div class="pb-6 bg-white sm:pb-8 lg:pb-12">
-        <div class="max-w-screen-xl px-4 mx-auto md:px-8">
+        <div class=" mx-auto ">
             <section
-                class="relative flex items-center justify-center flex-1 py-16 overflow-hidden bg-gray-100 rounded-lg shadow-lg min-h-96 shrink-0 md:py-20 xl:py-48">
+                class="relative flex items-center justify-center flex-1 py-16 overflow-hidden bg-gray-100 shadow-lg min-h-96 shrink-0 md:py-20 xl:py-48">
                 <!-- image - start -->
                 <img src="/assets/img/logo-unja.svg" loading="lazy" alt="Photo by Fakurian Design"
                     class="absolute mx-auto inset-0 object-cover object-center w-full h-full" />
@@ -147,7 +147,7 @@
         <!-- Title -->
         <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
             <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Personil Kami</h2>
-            <p class="mt-1 text-gray-600 dark:text-gray-400">Creative people</p>
+            <p class="mt-1 text-gray-600 dark:text-gray-400">Bersama tim yang berpengalaman dan berdedikasi</p>
         </div>
         <!-- End Title -->
 
@@ -159,7 +159,7 @@
                             alt="Album" /></figure>
                     <div class="card-body lg:w-52 h-full">
                         <blockquote class="relative">
-                            <svg class="absolute top-14 left-0 transform -translate-x-8 -translate-y-4 h-24 w-24 text-gray-200 dark:text-gray-700"
+                            <svg class="absolute top-14 left-0 transform -translate-x-8 -translate-y-4 h-24 w-24 text-base-300"
                                 width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path
@@ -200,7 +200,7 @@
         <!-- Title -->
         <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
             <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Pengajar Kami</h2>
-            <p class="mt-1 text-gray-600 dark:text-gray-400">Creative people</p>
+            <p class="mt-1 text-gray-600 dark:text-gray-400">Belajar dengan tutor berpengalaman di situs kami</p>
         </div>
         <!-- End Title -->
 
@@ -212,7 +212,7 @@
                             alt="Album" /></figure>
                     <div class="card-body lg:w-52 h-full">
                         <blockquote class="relative">
-                            <svg class="absolute top-14 left-0 transform -translate-x-8 -translate-y-4 h-24 w-24 text-gray-200 dark:text-gray-700"
+                            <svg class="absolute top-14 left-0 transform -translate-x-8 -translate-y-4 h-24 w-24 text-base-300"
                                 width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path

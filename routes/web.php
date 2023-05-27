@@ -48,7 +48,7 @@ Route::get('courses-abouts', [HomeController::class, 'abouts'])->name('courses.a
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::post('/image-upload', [AcademyController::class, 'storeImage'])->name('image.upload');
-    Route::get('/materials', [HomeController::class, 'materials'])->name('materials');
+    // Route::get('/materials', [HomeController::class, 'materials'])->name('materials');
 });
 
 

@@ -32,6 +32,61 @@
                         efektif, dan cara menghadapi kontroversi dengan baik. Tingkatkan kemampuan Anda dalam berargumen
                         dan jadilah seorang pembicara yang persuasif melalui penulisan argumentasi yang berkualitas.
                     </p>
+                    <div class="mt-4 card bg-base-100 shadow-xl prose">
+                        <div class="card-body">
+                            <span class="text-justify text-gray-700 md:text-lg">
+                                <p>
+                                    Struktur Argument-Claim-Evidence-Reasoning (CER) adalah kerangka kerja yang
+                                    digunakan
+                                    dalam penulisan akademik untuk membangun argumen yang kuat dan meyakinkan. Berikut
+                                    adalah penjelasan tentang setiap elemen dalam struktur CER:
+                                </p>
+                                <ol>
+                                    <li><span class="font-bold">Argument (Argumen):</span><br>
+                                        Argumen merupakan pernyataan utama atau klaim yang ingin Anda buat dalam tulisan
+                                        akademik. Argumen harus jelas, terfokus, dan dinyatakan dengan singkat. Ini
+                                        adalah
+                                        pernyataan yang hendak Anda buktikan atau bujukan kepada pembaca.</li>
+                                    <li><span class="font-bold">Claim (Klaim): </span><br>
+                                        Klaim adalah pernyataan pendukung yang mendukung argumen Anda. Klaim harus
+                                        relevan,
+                                        spesifik, dan terkait dengan topik yang sedang Anda bahas. Klaim menyediakan
+                                        dasar atau
+                                        alasan untuk mempertahankan argumen Anda.</li>
+                                    <li><span class="font-bold">Evidence (Bukti):</span> <br>
+                                        Bukti adalah informasi, fakta, data, atau sumber lainnya yang digunakan untuk
+                                        mendukung
+                                        klaim Anda. Bukti harus valid, akurat, dan kredibel. Anda dapat menggunakan
+                                        hasil
+                                        penelitian, studi kasus, kutipan dari sumber otoritatif, statistik, atau argumen
+                                        logis
+                                        sebagai bukti untuk mendukung klaim Anda.</li>
+                                    <li><span class="font-bold">Reasoning (Penalaran):</span> <br>
+                                        Penalaran adalah penjelasan atau analisis yang menghubungkan bukti dengan klaim
+                                        Anda.
+                                        Penalaran menjelaskan bagaimana bukti yang disajikan mendukung klaim Anda dan
+                                        mengapa
+                                        pembaca harus menerima argumen Anda. Ini membantu memperkuat kepercayaan dan
+                                        persuasi
+                                        dalam tulisan Anda.</li>
+                                </ol>
+                                <p>
+                                    Dalam struktur CER, Anda mengatur informasi Anda dengan cara yang sistematis dan
+                                    logis.
+                                    Anda memulai dengan argumen sebagai pernyataan utama, kemudian mendukungnya dengan
+                                    klaim
+                                    yang didukung oleh bukti yang relevan dan akurat. Terakhir, Anda memberikan
+                                    penalaran
+                                    yang menghubungkan bukti dengan klaim untuk memperkuat argumen Anda.
+                                    <br>
+                                    Penting untuk mencatat bahwa struktur CER ini dapat bervariasi tergantung pada jenis
+                                    tulisan akademik dan disiplin ilmu tertentu. Namun, inti dari CER tetap sama yaitu
+                                    membangun argumen yang kuat dan didukung oleh bukti yang relevan.
+
+                                </p>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

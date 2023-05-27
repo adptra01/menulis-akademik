@@ -33,6 +33,74 @@
                         memikat hati pembaca. Bersiaplah untuk menjelajahi teknik penulisan yang kreatif, struktur yang
                         solid, dan pendekatan yang cerdas dalam menyampaikan ide.
                     </p>
+                    <div class="mt-4 card bg-base-100 shadow-xl prose">
+                        <div class="card-body">
+                            <span class="text-justify text-gray-700 md:text-lg">
+                                <p>
+                                    Tulisan akademik mencakup berbagai jenis tulisan yang digunakan dalam konteks
+                                    akademik dan
+                                    penelitian. Berikut adalah beberapa jenis tulisan akademik umum:
+                                </p>
+                                <ol>
+                                    <li><span class="font-bold">Esai :</span><br>
+                                        Esai akademik adalah jenis tulisan yang menggambarkan, menganalisis, atau
+                                        membahas suatu topik
+                                        dengan menggunakan argumen yang terorganisir dan dukungan bukti. Esai sering
+                                        digunakan untuk
+                                        menyampaikan pendapat atau analisis terhadap suatu topik, dan dapat memiliki
+                                        struktur yang
+                                        berbeda seperti esai argumentatif, esai komparatif, atau esai ekspositori.</li>
+                                    <li><span class="font-bold">Laporan Penelitian: </span><br>
+                                        Laporan penelitian adalah jenis tulisan akademik yang merinci proses,
+                                        metodologi, temuan, dan
+                                        analisis dari sebuah penelitian. Laporan penelitian mencakup pendahuluan, tujuan
+                                        penelitian,
+                                        kerangka teori, metodologi penelitian, hasil, analisis, dan kesimpulan.
+                                        Tujuannya adalah untuk
+                                        menyajikan temuan penelitian dengan jelas dan objektif kepada pembaca.</li>
+                                    <li><span class="font-bold">Artikel Jurnal :</span> <br>
+                                        Artikel jurnal adalah tulisan akademik yang diterbitkan dalam jurnal ilmiah.
+                                        Artikel ini
+                                        mencakup penelitian yang dilakukan oleh penulis dan menjelaskan metodologi,
+                                        temuan, dan analisis
+                                        penelitian tersebut. Artikel jurnal biasanya mengikuti format yang ketat dan
+                                        mengikuti aturan
+                                        penulisan jurnal ilmiah.</li>
+                                    <li><span class="font-bold">Tinjauan Pustaka :</span> <br>
+                                        Tinjauan pustaka adalah jenis tulisan akademik yang menyajikan ringkasan,
+                                        analisis, dan sintesis
+                                        dari literatur yang relevan tentang topik tertentu. Tujuannya adalah untuk
+                                        mengidentifikasi gap
+                                        penelitian, memberikan pemahaman yang komprehensif tentang topik, dan
+                                        memperkenalkan
+                                        konsep-konsep yang relevan yang telah dipublikasikan sebelumnya.</li>
+                                    <li><span class="font-bold">Makalah Seminar :</span> <br>
+                                        Makalah seminar adalah jenis tulisan akademik yang disajikan dalam seminar atau
+                                        konferensi
+                                        akademik. Makalah ini berisi hasil penelitian, analisis, dan temuan yang
+                                        dipresentasikan kepada
+                                        audiens terkait. Makalah seminar mencakup pendahuluan, metodologi, hasil,
+                                        analisis, dan
+                                        kesimpulan.</li>
+                                    <li><span class="font-bold">Tesis dan Disertasi :</span> <br>
+                                        Tesis dan disertasi adalah tulisan akademik yang diajukan sebagai persyaratan
+                                        untuk memperoleh
+                                        gelar sarjana atau pascasarjana. Tesis dan disertasi melibatkan penelitian yang
+                                        mendalam dalam
+                                        suatu bidang dan harus memenuhi standar akademik yang ketat. Tesis biasanya
+                                        lebih pendek dan
+                                        lebih fokus dibandingkan dengan disertasi.</li>
+                                </ol>
+                                <p>
+                                    Itu hanya beberapa contoh jenis tulisan akademik yang umum. Terdapat juga jenis lain
+                                    seperti
+                                    ulasan buku, laporan proyek, artikel opini, dan lainnya. Setiap jenis tulisan
+                                    memiliki struktur,
+                                    format, dan tujuan yang berbeda, tergantung pada konteks akademiknya
+                                </p>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

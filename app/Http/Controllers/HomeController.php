@@ -8,25 +8,36 @@ use App\Models\Argument;
 use App\Models\ArgumentCategory;
 use App\Models\Guideline;
 use App\Models\Service;
+use ArielMejiaDev\LarapexCharts\LarapexChart as LarapexChartsLarapexChart;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
+        $arguments = Argument::count(); 
+        $Academies = Academy::count(); 
+
+        $chart = (new LarapexChartsLarapexChart)
+                   ->setDataset([$Academies, $arguments])
+                   ->setLabels(['MateriAkademik', 'Materi Argumen']);
+
         return view('home', [
             'academy' => Academy::get(),
+            'chart' => $chart,
+            'academies' => Academy::latest()->get(),
+            'arguments' => Argument::latest()->get(),
         ]);
     }
 
-    public function materials()
-    {
-        return view('materials', [
-            'academies' => Academy::latest()->get(),
-            'arguments' => Argument::get(),
+    // public function materials()
+    // {
+    //     return view('materials', [
+    //         'academies' => Academy::latest()->get(),
+    //         'arguments' => Argument::get(),
             
-        ]);
-    }
+    //     ]);
+    // }
 
     public function academies()
     {
