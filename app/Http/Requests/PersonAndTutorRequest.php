@@ -13,7 +13,7 @@ class PersonAndTutorRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,7 +25,7 @@ class PersonAndTutorRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'image' => 'image',
+            'image' => 'required|url',
             'position' => 'required',
             'description' => 'required|max:310',
         ];

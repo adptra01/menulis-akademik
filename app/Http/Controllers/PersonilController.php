@@ -18,14 +18,11 @@ class PersonilController extends Controller
 
     public function store(PersonAndTutorRequest $request)
     {
-        $file = $request->file('image');
-        $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
-        $filePath = $file->storeAs('personil', $fileName, 'public');    
-        
+
         Personil::create([
             'name' => $request->name,
-            'slug' => Str::slug($request->name),
-            'image' => $filePath,
+            'slug' => Str::slug($request->name.rand()),
+            'image' => $request->image,
             'position' => $request->position,
             'description' => $request->description,
         ]);
@@ -46,17 +43,10 @@ class PersonilController extends Controller
     {
         $personil = Personil::where('slug', $slug)->firstOrFail();
 
-        if ($request->hasFile('image')) {
-            $file = $request->file('image');
-            $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
-            $filePath = $file->storeAs('personil', $fileName, 'public');
 
-            Storage::disk('public')->delete($personil->image);
-            $personil->image = $filePath;
-        }
-
-        $personil->slug = Str::slug($request->name);
+        $personil->slug = Str::slug($request->name.rand());
         $personil->name = $request->name;
+        $personil->image = $request->image;
         $personil->position = $request->position;
         $personil->description = $request->description;
         $personil->save();
@@ -66,7 +56,6 @@ class PersonilController extends Controller
 
     public function destroy($slug){
         $personils = Personil::whereSlug($slug)->first();
-        Storage::disk('public')->delete($personils->image);
         $personils->delete();
 
         return back()->with('success', 'Successfully deleted');

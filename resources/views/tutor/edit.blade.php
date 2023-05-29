@@ -12,7 +12,7 @@
         </div>
         <div class="mb-3 col-sm">
             <label for="image" class="form-label">Foto</label>
-            <input class="form-control" type="file" name="image" id="image">
+            <input class="form-control" type="text" value="{{ $tutor->image}}" name="image" id="image">
             @error('image')
                 <small class="text-danger">{{ $message }}</small>
             @enderror

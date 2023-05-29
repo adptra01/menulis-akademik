@@ -24,9 +24,9 @@ class AcademiesRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|unique:academies,title|max:255',
+            'title' => 'required|max:255',
             'description' => 'required|min:20',
-            'thumbnail' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+            'thumbnail' => 'required|url'
         ];
     }
 }

@@ -37,15 +37,10 @@ class AcademyController extends Controller
 
     public function store(AcademiesRequest $request)
     {
-
-        $file = $request->file('thumbnail');
-        $fileName = rand(0,9999999) . now() . '_' . $file->getClientOriginalName();
-        $filePath = $file->storeAs('thumbnail', $fileName, 'public');
-
         Academy::create([
             'title' => $request->title,
-            'slug' => Str::slug($request->title),
-            'thumbnail' => $filePath,
+            'slug' => Str::slug($request->title.rand()),
+            'thumbnail' => $request->thumbnail,
             'description' => $request->description,
         ]);
 
@@ -66,17 +61,9 @@ class AcademyController extends Controller
     {
         $academy = Academy::where('slug', $slug)->firstOrFail();
 
-        if ($request->hasFile('thumbnail')) {
-            $file = $request->file('thumbnail');
-            $fileName = rand(0,9999999) . now() . '_' . $file->getClientOriginalName();
-            $filePath = $file->storeAs('thumbnail', $fileName, 'public');
-
-            Storage::disk('public')->delete($academy->thumbnail);
-            $academy->thumbnail = $filePath;
-        }
-
-        $academy->slug = Str::slug($request->title);
+        $academy->slug = Str::slug($request->title.rand());
         $academy->title = $request->title;
+        $academy->thumbnail = $request->thumbnail;
         $academy->description = $request->description;
         $academy->save();
 
@@ -86,7 +73,6 @@ class AcademyController extends Controller
     public function destroy($slug)
     {
         $academy = Academy::whereSlug($slug)->first();
-        Storage::disk('public')->delete($academy->thumbnail);
         $academy->delete();
 
         return back()->with('success', 'Academy Materials deleted successfully.');

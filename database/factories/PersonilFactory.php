@@ -15,14 +15,11 @@ class PersonilFactory extends Factory
      */
     public function definition()
     {
-        $file = UploadedFile::fake()->image('thumbnail.jpg');
-        $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
-        $filePath = $file->storeAs('personil', $fileName, 'public');
-
+      
         return [
             'name' => $this->faker->userName(),
             'slug' => Str::slug($this->faker->userName()),
-            'image' => $filePath,
+            'image' => 'https://source.unsplash.com/random/?course&1',
             'position' => $this->faker->jobTitle(),
             'description' => $this->faker->paragraph(),
         ];

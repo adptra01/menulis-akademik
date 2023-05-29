@@ -18,14 +18,11 @@ class TutorController extends Controller
 
     public function store(PersonAndTutorRequest $request)
     {
-        $file = $request->file('image');
-        $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
-        $filePath = $file->storeAs('tutor', $fileName, 'public');    
-        
+       
         Tutor::create([
             'name' => $request->name,
-            'slug' => Str::slug($request->name),
-            'image' => $filePath,
+            'slug' => Str::slug($request->name.rand()),
+            'image' => $request->image,
             'position' => $request->position,
             'description' => $request->description,
         ]);
@@ -55,7 +52,7 @@ class TutorController extends Controller
             $tutor->image = $filePath;
         }
 
-        $tutor->slug = Str::slug($request->name);
+        $tutor->slug = Str::slug($request->name.rand());
         $tutor->name = $request->name;
         $tutor->position = $request->position;
         $tutor->description = $request->description;
@@ -66,7 +63,6 @@ class TutorController extends Controller
 
     public function destroy($slug){
         $tutors = Tutor::whereSlug($slug)->first();
-        Storage::disk('public')->delete($tutors->image);
         $tutors->delete();
 
         return back()->with('success', 'Successfully deleted');

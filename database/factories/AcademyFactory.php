@@ -15,13 +15,10 @@ class AcademyFactory extends Factory
      */
     public function definition()
     {
-        $file = UploadedFile::fake()->image('thumbnail.jpg');
-        $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
-        $filePath = $file->storeAs('thumbnail', $fileName, 'public');
-
+      
         return [
             'slug' => Str::slug($this->faker->sentence()),
-            'thumbnail' => $filePath,
+            'thumbnail' => 'https://source.unsplash.com/random/?course&1',
             'title' => $this->faker->sentence(),
             'description' => $this->faker->paragraph(),
         ];

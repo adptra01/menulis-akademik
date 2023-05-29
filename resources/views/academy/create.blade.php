@@ -34,7 +34,7 @@
                                     <td>{{ ++$no }}</td>
                                     <td>
                                         <img class="rounded" width="50px" height="50px" style="object-fit: cover"
-                                            src="{{ Storage::url($item->thumbnail) }}" alt="Avatar">
+                                            src="{{ $item->thumbnail }}" alt="Avatar">
                                     </td>
                                     <td>{{ Str::limit($item->title, 25, '...') }}</td>
                                     <td>
@@ -71,7 +71,7 @@
                         </div>
                         <div class="mb-3 col-sm">
                             <label for="thumbnail" class="form-label">Thumbnail</label>
-                            <input class="form-control" type="file" name="thumbnail" id="thumbnail" required>
+                            <input class="form-control" type="text" name="thumbnail" id="thumbnail" required>
                             @error('thumbnail')
                                 <small class="text-danger">{{ $message }}</small>
                             @enderror

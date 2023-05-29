@@ -13,7 +13,7 @@ class ArgumentRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,10 +24,10 @@ class ArgumentRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|unique:arguments,title|max:255',
+            'title' => 'required|max:255',
             'argument_category_id' => 'required|exists:argument_categories,id',
             'description' => 'required|min:20',
-            'thumbnail' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+            'thumbnail' => 'required|url'
         ];
     }
 }

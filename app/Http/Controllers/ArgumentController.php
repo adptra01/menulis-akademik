@@ -25,15 +25,11 @@ class ArgumentController extends Controller
 
     public function store(ArgumentRequest $request)
     {
-        $file = $request->file('thumbnail');
-        $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
-        $filePath = $file->storeAs('thumbnail', $fileName, 'public');
-
         Argument::create([
             'title' => $request->title,
             'argument_category_id' => $request->argument_category_id,
-            'slug' => Str::slug($request->title),
-            'thumbnail' => $filePath,
+            'slug' => Str::slug($request->title.rand()),
+            'thumbnail' => $request->thumbnail,
             'description' => $request->description,
         ]);
 
@@ -54,16 +50,9 @@ class ArgumentController extends Controller
     {
         $argument = argument::where('slug', $slug)->firstOrFail();
 
-        if ($request->hasFile('thumbnail')) {
-            $file = $request->file('thumbnail');
-            $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
-            $filePath = $file->storeAs('thumbnail', $fileName, 'public');
-
-            Storage::disk('public')->delete($argument->thumbnail);
-            $argument->thumbnail = $filePath;
-        }
-
-        $argument->slug = Str::slug($request->title);
+        
+        $argument->thumbnail = $request->thumbnail;
+        $argument->slug = Str::slug($request->title.rand());
         $argument->title = $request->title;
         $argument->argument_category_id = $request->argument_category_id;
         $argument->description = $request->description;
@@ -75,7 +64,6 @@ class ArgumentController extends Controller
     public function destroy($slug)
     {
         $argument = argument::whereSlug($slug)->first();
-        Storage::disk('public')->delete($argument->thumbnail);
         $argument->delete();
 
         return back()->with('success', 'argument Materials deleted successfully.');

@@ -28,7 +28,8 @@
         </div>
         <div class="mb-3 col-sm">
             <label for="thumbnail" class="form-label">Thumbnail</label>
-            <input class="form-control" type="file" name="thumbnail" id="thumbnail">
+            <input class="form-control" value="{{ $argument->thumbnail }}" type="text" name="thumbnail"
+                id="thumbnail">
             @error('thumbnail')
                 <small class="text-danger">{{ $message }}</small>
             @enderror

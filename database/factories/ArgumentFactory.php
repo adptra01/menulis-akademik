@@ -16,13 +16,10 @@ class ArgumentFactory extends Factory
      */
     public function definition()
     {
-        $file = UploadedFile::fake()->image('thumbnail.jpg');
-        $fileName = time() . '_' . $file->getClientOriginalName();
-        $filePath = $file->storeAs('thumbnail', $fileName, 'public');
-
+        
         return [
             'slug' => Str::slug($this->faker->sentence()),
-            'thumbnail' => $filePath,
+            'thumbnail' => 'https://source.unsplash.com/random/?course&1',
             'argument_category_id' => function () {
                 return ArgumentCategory::all()->random();
             },

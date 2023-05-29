@@ -15,7 +15,7 @@
         @foreach ($academies as $item)
             <div class="col">
                 <div class="card bg-dark text-secondary fw-bold">
-                    <img src="{{ Storage::url($item->thumbnail) }}" class="card-img" alt="..."
+                    <img src="{{ $item->thumbnail }}" class="card-img" alt="..."
                         style="object-fit: cover" width="200px" height="200px">
                     <div class="card-img-overlay">
                         <h5 class="card-title text-secondary fw-bold">{{ Str::limit($item->title, 25, '...') }}</h5>
