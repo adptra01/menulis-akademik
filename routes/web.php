@@ -37,6 +37,8 @@ Route::get('/', function () {
     ]);
 });
 
+
+
 Route::get('/courses-academies', [HomeController::class, 'academies'])->name('courses.academies');
 Route::get('/courses-arguments', [HomeController::class, 'arguments'])->name('courses.arguments');
 Route::get('courses/{slug}', [HomeController::class, 'details'])->name('details');
@@ -44,12 +46,11 @@ Route::get('courses-guidelines', [HomeController::class, 'guidelines'])->name('c
 Route::get('courses-services', [HomeController::class, 'services'])->name('courses.services');
 Route::get('courses-abouts', [HomeController::class, 'abouts'])->name('courses.abouts');
 
-
 Route::middleware(['auth'])->group(function () {
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::post('/image-upload', [AcademyController::class, 'storeImage'])->name('image.upload');
-    // Route::get('/materials', [HomeController::class, 'materials'])->name('materials');
-});
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/image-upload', [AcademyController::class, 'storeImage'])->name('image.upload');
+// Route::get('/materials', [HomeController::class, 'materials'])->name('materials');
 
 
 Route::prefix('/academies')->group(function () {
@@ -107,4 +108,6 @@ Route::prefix('guidelines')->group(function () {
 Route::prefix('services')->group(function () {
     Route::get('/', [ServiceController::class, 'index'])->name('service');
     Route::put('/{id}', [ServiceController::class, 'update'])->name('service.update');
+});
+
 });

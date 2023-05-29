@@ -6,7 +6,6 @@ use App\Http\Requests\PersonAndTutorRequest;
 use App\Models\Personil;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Storage;
 
 class PersonilController extends Controller
 {

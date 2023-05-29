@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name="title">Tutor</x-slot>
+    <x-slot name="title">Tutors Team</x-slot>
     <div class="card pt-3 mb-3">
         <div class="row">
             <div class="col-sm-5">

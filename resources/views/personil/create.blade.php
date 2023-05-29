@@ -11,7 +11,7 @@
         </div>
         <div class="mb-3 col-sm">
             <label for="image" class="form-label">Foto</label>
-            <input class="form-control" type="text" name="image" id="image" required>
+            <input class="form-control" type="text" name="image" id="image" placeholder="Enter image personil" required>
             @error('image')
                 <small class="text-danger">{{ $message }}</small>
             @enderror
@@ -20,7 +20,7 @@
     <div class="row">
         <div class="mb-3 col">
             <label for="position" class="form-label">Posisi</label>
-            <input class="form-control" name="position" value="{{ old('position') }}" id="editor" rows="3">
+            <input class="form-control" name="position" placeholder="Enter position personil" value="{{ old('position') }}" id="editor" rows="3">
             @error('position')
                 <small class="text-danger">{{ $message }}</small>
             @enderror
@@ -29,7 +29,7 @@
     <div class="row">
         <div class="mb-3 col">
             <label for="description" class="form-label">Pesan</label>
-            <textarea class="form-control" name="description" value="{{ old('description') }}" id="editor" rows="3"></textarea>
+            <textarea class="form-control" placeholder="Enter message personil" name="description" value="{{ old('description') }}" id="editor" rows="3"></textarea>
             @error('description')
                 <small class="text-danger">{{ $message }}</small>
             @enderror

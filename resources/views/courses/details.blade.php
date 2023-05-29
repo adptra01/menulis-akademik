@@ -8,7 +8,7 @@
                 <div class="lg:col-span-2">
                     <div class="py-8 lg:pr-4 lg:pr-8">
                         <div class="space-y-5 lg:space-y-8">
-                            <img src="{{ Storage::url($details->thumbnail) }}" class="object-cover w-11/12 h-96"
+                            <img src="{{ $details->thumbnail }}" class="object-cover w-11/12 xl:w-full h-96"
                                 alt="thumbnail">
 
                             <h2 class="text-3xl font-bold lg:text-4xl lg:text-5xl dark:text-white">{{ $details->title }}
@@ -71,7 +71,7 @@
                                 <a class="flex items-center group gap-x-6" href="{{ Route('details', $item->slug) }}">
                                     <div class="grow">
                                         <span
-                                            class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
+                                            class="text-sm font-bold text-gray-800 group-hover:text-orange-600 dark:text-gray-200 dark:group-hover:text-orange-500">
                                             {{ $item->title }}
                                         </span>
                                         <p class="pt-2 text-sm">
@@ -80,7 +80,7 @@
 
                                     <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
                                         <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
-                                            src="{{ storage::url($item->thumbnail) }}" alt="Image Description">
+                                            src="{{ $item->thumbnail }}" alt="Image Description">
                                     </div>
                                 </a>
                             @endforeach
@@ -91,7 +91,7 @@
                                 <a class="flex items-center group gap-x-6" href="{{ Route('details', $item->slug) }}">
                                     <div class="grow">
                                         <span
-                                            class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
+                                            class="text-sm font-bold text-gray-800 group-hover:text-orange-600 dark:text-gray-200 dark:group-hover:text-orange-500">
                                             {{ $item->title }}
                                         </span>
                                         <p class="pt-2 text-sm">
@@ -100,7 +100,7 @@
 
                                     <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
                                         <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
-                                            src="{{ storage::url($item->thumbnail) }}" alt="Image Description">
+                                            src="{{ $item->thumbnail }}" alt="Image Description">
                                     </div>
                                 </a>
                             @endforeach

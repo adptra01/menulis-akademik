@@ -37,7 +37,7 @@
                     <div class="col-sm-7">
                         <div class="text-center card-body text-sm-start ps-sm-0">
                             <a class="mb-3 btn btn-primary" href="{{ Route('argumentCategory') }}">Kategori Argumen</a>
-                            <p class="mb-0">Add role, if it does not exist</p>
+                            <p class="mb-0">Tambah kategori dari materi argumen</p>
                         </div>
                     </div>
                 </div>

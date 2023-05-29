@@ -155,7 +155,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach ($personils as $item)
                 <div class="card lg:card-side glass shadow-xl">
-                    <figure><img src="{{ Storage::url($item->image) }}" class="object-cover w-full h-80 lg:hidden"
+                    <figure><img src="{{ $item->image }}" class="object-cover w-full h-80 lg:hidden"
                             alt="Album" /></figure>
                     <div class="card-body lg:w-52 h-full">
                         <blockquote class="relative">
@@ -170,7 +170,7 @@
                             <div class="relative z-10">
                                 <div class="flex items-center">
                                     <img class="h-12 w-12 md:mr-6 object-cover md:block hidden rounded-full"
-                                        src="{{ Storage::url($item->image) }}" alt="Image Description">
+                                        src="{{ $item->image }}" alt="Image Description">
                                     <div class="relative">
                                         <p class="font-semibold tracking-wide uppercase text-secondary">
                                             {{ $item->name }}
@@ -208,7 +208,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach ($tutors as $item)
                 <div class="card lg:card-side glass shadow-xl">
-                    <figure><img src="{{ Storage::url($item->image) }}" class="object-cover w-full h-80 lg:hidden"
+                    <figure><img src="{{ $item->image }}" class="object-cover w-full h-80 lg:hidden"
                             alt="Album" /></figure>
                     <div class="card-body lg:w-52 h-full">
                         <blockquote class="relative">
@@ -223,7 +223,7 @@
                             <div class="relative z-10">
                                 <div class="flex items-center">
                                     <img class="h-12 w-12 md:mr-6 object-cover md:block hidden rounded-full"
-                                        src="{{ Storage::url($item->image) }}" alt="Image Description">
+                                        src="{{ $item->image }}" alt="Image Description">
                                     <div class="relative">
                                         <p class="font-semibold tracking-wide uppercase text-secondary">
                                             {{ $item->name }}

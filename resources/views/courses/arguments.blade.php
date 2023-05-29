@@ -111,7 +111,7 @@
                             href="{{ route('details', $item->slug) }}">
                             <div class="aspect-w-16 aspect-h-11">
                                 <img class="object-cover w-full h-40 rounded-xl"
-                                    src="{{ Storage::url($item->thumbnail) }}" alt="Image Description">
+                                    src="{{ $item->thumbnail }}" alt="Image Description">
                             </div>
                             <div class="my-6">
                                 <h3 class="text-xl font-semibold text-secondary dark:group-hover:text-white">

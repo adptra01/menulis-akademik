@@ -42,16 +42,7 @@ class TutorController extends Controller
     public function update(PersonAndTutorRequest $request, $slug)
     {
         $tutor = Tutor::where('slug', $slug)->firstOrFail();
-
-        if ($request->hasFile('image')) {
-            $file = $request->file('image');
-            $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
-            $filePath = $file->storeAs('tutor', $fileName, 'public');
-
-            Storage::disk('public')->delete($tutor->image);
-            $tutor->image = $filePath;
-        }
-
+        $tutor->image = $request->image;
         $tutor->slug = Str::slug($request->name.rand());
         $tutor->name = $request->name;
         $tutor->position = $request->position;
