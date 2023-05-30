@@ -21,6 +21,8 @@ class AcademyFactory extends Factory
             'thumbnail' => 'https://source.unsplash.com/random/?course&1',
             'title' => $this->faker->sentence(),
             'description' => $this->faker->paragraph(),
+            'created_at' => now()->subMonths(rand(0, 12)),
+            'updated_at' => now()->subMonths(rand(0, 12))
         ];
     }
 }

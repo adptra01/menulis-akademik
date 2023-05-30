@@ -6,7 +6,7 @@ use App\Models\Academy;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Requests\AcademiesRequest;
-use Illuminate\Support\Facades\Storage;
+use ArielMejiaDev\LarapexCharts\LarapexChart as LarapexChartsLarapexChart;
 
 class AcademyController extends Controller
 {
@@ -14,24 +14,34 @@ class AcademyController extends Controller
     {
         $this->middleware('auth');
     }
-    public function storeImage(Request $request)
-    {
-        if ($request->hasFile('upload')) {
-            $originName = $request->file('upload')->getClientOriginalName();
-            $fileName = pathinfo($originName, PATHINFO_FILENAME);
-            $extension = $request->file('upload')->getClientOriginalExtension();
-            $fileName = $fileName . '_' . rand(0,9999999) . now() . '.' . $extension;
-    
-            $request->file('upload')->move(public_path('media'), $fileName);
-    
-            $url = asset('media/' . $fileName);
-            return response()->json(['fileName' => $fileName, 'uploaded'=> 1, 'url' => $url]);
-        }
-    }
     public function index()
     {
+        $posts = Academy::where('created_at', '>=', now()->subMonths(12))->get();
+        $monthlyTotals = $posts->groupBy(function ($post) {
+            return $post->created_at->format('F Y');
+        })->map(function ($groupedPosts) {
+            return $groupedPosts->count();
+        });
+
+        $months = [];
+        $counts = [];
+        foreach ($monthlyTotals as $month => $total) {
+            $months[] = $month;
+            $counts[] = $total;
+        }
+
+        $chart = (new LarapexChartsLarapexChart)->setType('area')
+        ->setXAxis($months)
+        ->setDataset([
+            [
+                'name'  =>  'Materi academik',
+                'data'  =>  $counts
+            ]
+        ]);
+
         return view('academy.index', [
             'academies' => Academy::latest()->get(),
+            'chart' => $chart
         ]);
     }
 

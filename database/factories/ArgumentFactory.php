@@ -25,6 +25,8 @@ class ArgumentFactory extends Factory
             },
             'title' => $this->faker->sentence(),
             'description' => $this->faker->paragraph(),
+            'created_at' => now()->subMonths(rand(0, 12)),
+            'updated_at' => now()->subMonths(rand(0, 12))
         ];
     }
 }

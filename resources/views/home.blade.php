@@ -18,10 +18,9 @@
                     <img src="{{ $item->thumbnail }}" class="card-img" alt="..."
                         style="object-fit: cover" width="200px" height="200px">
                     <div class="card-img-overlay">
-                        <h5 class="card-title text-secondary fw-bold">{{ Str::limit($item->title, 25, '...') }}</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's
-                            content.
+                        <h5 class="card-title text-white fw-bold">{{ Str::limit($item->title, 25, '...') }}</h5>
+                        <p class="card-text text-white">
+                            Menulis Akademik
                         </p>
                         <a href="{{ route('academy.show', $item->slug) }}" class="btn btn-sm btn-primary">Lihat</a>
                     </div>
@@ -37,10 +36,9 @@
                     <img src="{{ $item->thumbnail }}" class="card-img" alt="..."
                         style="object-fit: cover" width="200px" height="200px">
                     <div class="card-img-overlay">
-                        <h5 class="card-title text-secondary fw-bold">{{ Str::limit($item->title, 25, '...') }}</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's
-                            content.
+                        <h5 class="card-title text-white fw-bold">{{ Str::limit($item->title, 25, '...') }}</h5>
+                        <p class="card-text text-white">
+                            {{ $item->argumentcategory->name}}
                         </p>
                         <a href="{{ route('argument.show', $item->slug) }}" class="btn btn-sm btn-primary">Lihat</a>
                     </div>

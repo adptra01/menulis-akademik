@@ -31,6 +31,9 @@
 </script> --}}
 
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
 <style>
     .note-modal-content {
         position: fixed;
@@ -43,12 +46,9 @@
         background-color: #fff;
     }
 </style>
-
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#editor').summernote({
-            placeholder: 'Hello stand alone ui',
             tabsize: 2,
             toolbar: [
                 ['style', ['style']],
@@ -63,14 +63,14 @@
                 onInit: function() {
                     $('.note-group-select-from-files').hide();
                 }
-            }
+            },
         });
 
         // Mengatur ulang posisi popup "Help" saat jendela browser diubah ukurannya
         $(window).resize(function() {
             $('.note-modal-content').css({
                 top: '50%',
-                left: '50%',
+                width: '400px',
                 transform: 'translate(-50%, -50%)'
             });
         });

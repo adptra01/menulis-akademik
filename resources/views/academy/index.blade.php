@@ -16,6 +16,15 @@
         </div>
     @endif
     <div class="card">
+        <div class="card-body">
+            {!! $chart->container() !!}
+
+            <script src="{{ $chart->cdn() }}"></script>
+
+            {{ $chart->script() }}
+        </div>
+    </div>
+    <div class="card">
         <div class="card-header pb-5">
             <ul class="nav nav-pills card-header-pills justify-content-center" role="tablist">
                 <li class="nav-item">

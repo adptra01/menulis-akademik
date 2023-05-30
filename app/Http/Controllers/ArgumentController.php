@@ -7,7 +7,7 @@ use App\Models\Argument;
 use App\Models\ArgumentCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Storage;
+use ArielMejiaDev\LarapexCharts\LarapexChart as LarapexChartsLarapexChart;
 
 class ArgumentController extends Controller
 {
@@ -17,9 +17,32 @@ class ArgumentController extends Controller
     }
     public function index()
     {
+        $posts = Argument::where('created_at', '>=', now()->subMonths(12))->get();
+        $monthlyTotals = $posts->groupBy(function ($post) {
+            return $post->created_at->format('F Y');
+        })->map(function ($groupedPosts) {
+            return $groupedPosts->count();
+        });
+
+        $months = [];
+        $counts = [];
+        foreach ($monthlyTotals as $month => $total) {
+            $months[] = $month;
+            $counts[] = $total;
+        }
+
+        $chart = (new LarapexChartsLarapexChart)->setType('area')
+        ->setXAxis($months)
+        ->setDataset([
+            [
+                'name'  =>  'Materi academik',
+                'data'  =>  $counts
+            ]
+        ]);
         return view('argument.index', [
             'arguments' => Argument::get(),
             'categories' => ArgumentCategory::get(),
+            'chart' => $chart
         ]);
     }
 
