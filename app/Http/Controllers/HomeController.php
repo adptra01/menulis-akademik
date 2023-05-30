@@ -30,15 +30,6 @@ class HomeController extends Controller
         ]);
     }
 
-    // public function materials()
-    // {
-    //     return view('materials', [
-    //         'academies' => Academy::latest()->get(),
-    //         'arguments' => Argument::get(),
-            
-    //     ]);
-    // }
-
     public function academies()
     {
         return view('courses.academies', [

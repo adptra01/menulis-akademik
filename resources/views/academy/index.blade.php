@@ -82,6 +82,7 @@
     </div>
     @section('css')
         @include('datatables.css')
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
     @endsection
 
     @section('js')

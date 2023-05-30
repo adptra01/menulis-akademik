@@ -68,15 +68,15 @@
             <div class="flex items-center justify-center -mx-4 lg:pl-8">
                 <div class="flex flex-col items-end px-3">
                     <img class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-                        src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        src="https://images.unsplash.com/photo-1511250503134-89501c53a815?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kb25lc2lhJTIwc3R1ZGVudHxlbnwwfHwwfHx8MA%3D%3D&auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                         alt="" />
                     <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-                        src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        src="https://images.unsplash.com/photo-1625111381887-458fce74a923?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGluZG9uZXNpYSUyMHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
                         alt="" />
                 </div>
                 <div class="px-3">
                     <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-                        src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                        src="https://images.unsplash.com/photo-1646369505413-216676fef89c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGluZG9uZXNpYSUyMHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
                         alt="" />
                 </div>
             </div>
