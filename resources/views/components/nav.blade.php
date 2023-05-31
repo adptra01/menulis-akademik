@@ -7,14 +7,6 @@
         </a>
     </li>
 
-    {{-- <!-- Dashboard -->
-    <li class="menu-item">
-        <a href="{{ route('materials') }}" class="menu-link">
-            <i class="menu-icon tf-icons bx bx-list-ul"></i>
-            <div data-i18n="materials">Semua Materi</div>
-        </a>
-    </li> --}}
-
     <!-- manulis akademik -->
     <li class="menu-item">
         <a href="{{ route('academy') }}" class="menu-link">

@@ -75,20 +75,20 @@ class HomeController extends Controller
 
     public function abouts()
     {
-        return view('abouts', [
+        return view('courses.abouts', [
             'abouts' => About::first()
         ]);
     }
     public function services()
     {
-        return view('services', [
+        return view('courses.services', [
             'services' => Service::first()
         ]);
     }
 
     public function guidelines()
     {
-        return view('guidelines', [
+        return view('courses.guidelines', [
             'guidelines' => Guideline::first()
         ]);
     }

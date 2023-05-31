@@ -8,22 +8,25 @@
                 <div class="lg:col-span-2">
                     <div class="py-8 lg:pr-4 lg:pr-8">
                         <div class="space-y-5 lg:space-y-8">
-                            <img src="{{ $details->thumbnail }}" class="object-cover w-11/12 xl:w-full h-96"
+                            <img src="{{ $details->thumbnail }}" class="object-cover w-11/12 lg:w-full h-96"
                                 alt="thumbnail">
 
                             <h2 class="text-3xl font-bold lg:text-4xl lg:text-5xl dark:text-white">{{ $details->title }}
                             </h2>
 
                             <div class="flex items-center gap-x-5">
-                                <a class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-800 dark:text-gray-200"
-                                    href="#">
-                                    @if (isset($details->argumentCategory->name))
+                                @if (isset($details->argumentCategory->name))
+                                    <a class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-800 dark:text-gray-200"
+                                        href="{{ Route('courses.arguments')}}">
                                         {{ $details->argumentCategory->name }}
-                                    @else
+                                    </a>
+                                @else
+                                    <a class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-800 dark:text-gray-200"
+                                        href="{{ Route('courses.academies')}}">
                                         Menulis Akademik
-                                    @endif
+                                    </a>
+                                @endif
 
-                                </a>
                                 <p class="text-xs text-gray-800 sm:text-sm dark:text-gray-200">
                                     {{ Carbon\carbon::parse($details->created_at)->format('M d, Y') }}</p>
                             </div>

@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? '' }} Page - Akademik Menulis</title>
+    <link rel="icon"
+        href="https://rekreartive.com/wp-content/uploads/2018/11/Logo-UNJA-Universitas-Negeri-Jambi-Original-Hitam-Putih.png.webp">
+
     <script src="https://kit.fontawesome.com/21fb7efcbe.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -45,11 +48,13 @@
                                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                                 </svg>
                             </a>
-                            <ul class="p-2 bg-black text-white">
-                                <li><a class="active:bg-orange-500" href="{{ Route('courses.academies') }}">Menulis
-                                        Akademik</a></li>
-                                <li><a class="active:bg-orange-500" href="{{ Route('courses.arguments') }}">Menulis
+                            <ul class="ml-3 bg-base-100 text-white">
+                                <li><a class="active:bg-orange-500 text-black"
+                                        href="{{ Route('courses.arguments') }}">Menulis
                                         Argumen</a></li>
+                                <li><a class="active:bg-orange-500 text-black"
+                                        href="{{ Route('courses.academies') }}">Menulis
+                                        Akademik</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -90,14 +95,8 @@
         <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
             <div class="md:max-w-md lg:col-span-2">
                 <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                    <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round"
-                        stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor"
-                        fill="none">
-                        <rect x="3" y="1" width="7" height="12"></rect>
-                        <rect x="3" y="17" width="7" height="6"></rect>
-                        <rect x="14" y="1" width="7" height="6"></rect>
-                        <rect x="14" y="11" width="7" height="12"></rect>
-                    </svg>
+                    <img src="https://rekreartive.com/wp-content/uploads/2018/11/Logo-UNJA-Universitas-Negeri-Jambi-Original-Hitam-Putih.png.webp"
+                        class="w-10" alt="logo">
                     <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Menulis</span>
                 </a>
                 <div class="mt-4 lg:max-w-sm">
@@ -143,7 +142,7 @@
         </div>
         <div class="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
             <p class="text-sm text-gray-600">
-                © Created by Administrator, 2023.
+                © Created by <a href="https://github.com/adptra01/" class="text-secondary">adptra01</a>, 2023.
             </p>
             <div class="flex items-center mt-4 space-x-4 sm:mt-0">
                 <a href="{{ route('login') }}"

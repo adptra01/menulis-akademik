@@ -27,11 +27,22 @@ class DatabaseSeeder extends Seeder
             ServiceSeeder::class,
         ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'testing@testing.com',
-            'password' => bcrypt('testing'),
-            // 'isAdmin' => true,
+        User::insert([
+            [
+                'name' => 'Test User',
+                'email' => 'testing@testing.com',
+                'password' => bcrypt('testing'),
+                'isAdmin' => true,
+                'email_verified_at' => now(),
+            ],
+            [
+                'name' => 'adptra01',
+                'email' => 'm.a.syaputra.94@gmail.com',
+                'password' => bcrypt('Ad1 putra'),
+                'isAdmin' => true,
+                'email_verified_at' => now(),
+            ]
         ]);
+        
     }
 }

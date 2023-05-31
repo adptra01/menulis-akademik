@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\TutorController;
 use App\Http\Controllers\AcademyController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ArgumentController;
 use App\Http\Controllers\PersonilController;
@@ -25,7 +26,9 @@ use App\Http\Controllers\ArgumentCategoryController;
 |
 */
 
-Auth::routes();
+Auth::routes([
+    'register' => false,
+]);
 
 
 Route::get('/', function () {
@@ -46,10 +49,16 @@ Route::get('courses-guidelines', [HomeController::class, 'guidelines'])->name('c
 Route::get('courses-services', [HomeController::class, 'services'])->name('courses.services');
 Route::get('courses-abouts', [HomeController::class, 'abouts'])->name('courses.abouts');
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'admin', 'verified'])->group(function () {
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+Route::prefix('profile')->group(function () {
+    Route::get('/', [ProfileController::class, 'index'])->name('profile');
+    Route::put('/update-password', [ProfileController::class, 'password'])->name('update.password');
+    Route::put('/update-detail', [ProfileController::class, 'detail'])->name('update.detail');
+    
+});
 
 Route::prefix('/academies')->group(function () {
     Route::get('/', [AcademyController::class, 'index'])->name('academy');
@@ -75,7 +84,6 @@ Route::prefix('/argument-categories')->group(function () {
     Route::put('/{slug}', [ArgumentCategoryController::class, 'update'])->name('argumentCategory.update');
     Route::delete('/{slug}', [ArgumentCategoryController::class, 'destroy'])->name('argumentCategory.destroy');
 });
-
 
 Route::prefix('tutors')->group(function () {
     route::get('/', [TutorController::class, 'index'])->name('tutor');
