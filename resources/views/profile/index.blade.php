@@ -61,7 +61,7 @@
             <!-- About User -->
             <div class="card mb-4">
                 <div class="card-body">
-                    <small class="text-muted text-uppercase">About User</small>
+                    <small class="text-muted text-uppercase">Profile User</small>
                     <ul class="list-unstyled mb-4 mt-3">
                         <li class="d-flex align-items-center mb-3"><i class="bx bx-user"></i><span
                                 class="fw-semibold mx-2">Full Name:</span> <span>{{ $user->name }}</span></li>
