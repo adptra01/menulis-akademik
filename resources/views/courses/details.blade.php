@@ -31,7 +31,7 @@
                                     {{ Carbon\carbon::parse($details->created_at)->format('M d, Y') }}</p>
                             </div>
 
-                            <article class="prose text-justify lg:prose-xl">
+                            <article class="prose-poppins text-justify text-base lg:prose-xl prose-iframe:w-full prose-iframe:h-96 prose-iframe:lg:h-auto prose-iframe:lg:max-h-[600px]">
                                 @if (strip_tags($details->description) != $details->description)
                                     {!! $details->description !!}
                                 @else
