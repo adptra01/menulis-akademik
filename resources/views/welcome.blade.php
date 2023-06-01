@@ -15,11 +15,11 @@
 
                 <!-- text start -->
                 <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
-                    <p class="mb-4 text-lg font-semibold text-center text-white sm:text-xl md:mb-8">Kami
-                        memperkenalkan
-                    </p>
                     <h1 class="mb-8 text-4xl font-bold text-center text-white sm:text-5xl md:mb-12 md:text-6xl">
-                        Seni Menulis Akademik dan Keterampilan Argumentasi</h1>
+                        Pusat Penulisan Akademik Universitas Jambi</h1>
+                    <p class="mb-4 text-md font-semibold text-center text-white sm:text-lg md:mb-8">Wadah Untuk Pembelajaran
+                        Menulis Akademik dan Menulis Argumen
+                    </p>
 
                     <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
                         <a href="#start"
@@ -54,14 +54,16 @@
                 <div class="max-w-xl mb-6">
                     <h2
                         class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                        Apa itu<br class="hidden md:block" />
-                        Seni Menulis Akademik dan Keterampilan Argumentasi ?
-
+                        Misi Kami<br class="hidden md:block" />
                     </h2>
-                    <p class="text-base text-gray-700 md:text-lg">
-                        Seni Menulis Akademik dan Keterampilan Argumentasi merupakan keterampilan penting dalam dunia
-                        akademik yang melibatkan kemampuan untuk menghasilkan tulisan yang jelas, koheren, dan
-                        persuasif.
+                    <p class="text-base text-gray-700 md:text-sm text-md">
+                        Pusat Penulisan Akademik Program Studi Pendidikan Bahasa dan Sastra Indonesia di Universitas
+                        Jambi berfokus membantu mahasiswa Unja untuk mengembangkan Menulis menulis akademik mereka
+                        sambil menjunjung tinggi inklusivitas, kreativitas, dan kolaborasi. Ini adalah tujuan utama kami
+                        untuk menjadi platform yang banyak akal serta produktif dalam melengkapi Tridarma Universitas
+                        yang ada atau Tiga Pilar Pendidikan Tinggi (pengajaran, penelitian dan keterlibatan masyarakat)
+                        untuk mahasiswa. Komitmen kami adalah untuk membantu klien kami dalam mencapai kesuksesan mereka
+                        dalam penulisan akademik, terutama untuk publikasi jurnal.
                     </p>
                 </div>
             </div>
@@ -101,10 +103,10 @@
                     </svg>
                     <span class="relative">Kenapa</span>
                 </span>
-                Seni Menulis Akademik dan Keterampilan Argumentasi Penting ?
+                Menulis Akademik dan Menulis Argumen Penting ?
             </h2>
             <p class="text-base text-gray-700 md:text-lg">
-                Karena seni menulis akademik dan keterampilan argumentasi penting dalam mengembangkan kemampuan berpikir
+                Karena menulis akademik dan Menulis argumen penting dalam mengembangkan kemampuan berpikir
                 kritis dan menyampaikan ide dengan efektif.
             </p>
         </div>
@@ -114,11 +116,9 @@
                     class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gray-300 sm:mx-auto sm:w-24 sm:h-24">
                     <i class="text-4xl fa-solid text-black fa-graduation-cap"></i>
                 </div>
-                <h6 class="mb-3 text-xl font-bold leading-5">Seni Menulis Akademik </h6>
+                <h6 class="mb-3 text-xl font-bold leading-5"> Menulis Akademik </h6>
                 <p class="mb-3 text-sm text-gray-900">
-                    melibatkan kemampuan untuk menghasilkan tulisan yang jelas, terstruktur, dan didukung oleh bukti
-                    yang valid. Ini memungkinkan komunikasi yang efektif dan dapat meningkatkan kemampuan berpikir
-                    kritis.
+                    Belajar menyusun penulisan ilmiah seperti esai ilmiah dan artikel ilmiah.
                 </p>
                 <a href="{{ route('courses.academies') }}" aria-label=""
                     class="inline-flex items-center font-semibold transition-colors duration-200">Lihat
@@ -129,10 +129,10 @@
                     class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gray-300 sm:mx-auto sm:w-24 sm:h-24">
                     <i class="text-4xl fa-solid text-black fa-blog"></i>
                 </div>
-                <h6 class="mb-3 text-xl font-bold leading-5">Keterampilan Argumentasi</h6>
+                <h6 class="mb-3 text-xl font-bold leading-5">Menulis Argumen</h6>
                 <p class="mb-3 text-sm text-gray-900">
-                    di sisi lain, menggunakan logika yang tepat, dan mendukung pendapat dengan bukti yang meyakinkan.
-                    Ini membantu dalam menyusun pendapat yang persuasif dan mempengaruhi pemikiran orang lain.
+                    Menyusun argumen ilmiah pada latar belakang penelitian, kajian teori, metodologi penelitian, hasil
+                    dan pembahasan.
                 </p>
                 <a href="{{ route('courses.arguments') }}" aria-label=""
                     class="inline-flex items-center font-semibold transition-colors duration-200">Lihat

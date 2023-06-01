@@ -17,12 +17,12 @@
                             <div class="flex items-center gap-x-5">
                                 @if (isset($details->argumentCategory->name))
                                     <a class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-800 dark:text-gray-200"
-                                        href="{{ Route('courses.arguments')}}">
+                                        href="{{ Route('courses.arguments') }}">
                                         {{ $details->argumentCategory->name }}
                                     </a>
                                 @else
                                     <a class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-800 dark:text-gray-200"
-                                        href="{{ Route('courses.academies')}}">
+                                        href="{{ Route('courses.academies') }}">
                                         Menulis Akademik
                                     </a>
                                 @endif
@@ -31,7 +31,8 @@
                                     {{ Carbon\carbon::parse($details->created_at)->format('M d, Y') }}</p>
                             </div>
 
-                            <article class="prose-poppins text-justify text-base lg:prose-xl prose-iframe:w-full prose-iframe:h-96 prose-iframe:lg:h-auto prose-iframe:lg:max-h-[600px]">
+                            <article
+                                class="prose prose-poppins text-justify text-base lg:prose-xl prose-image:m-2 prose-image:p-2">
                                 @if (strip_tags($details->description) != $details->description)
                                     {!! $details->description !!}
                                 @else

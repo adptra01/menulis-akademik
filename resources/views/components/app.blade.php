@@ -7,6 +7,7 @@
     <title>{{ $title ?? '' }} Page - Akademik Menulis</title>
     <link rel="icon"
         href="https://rekreartive.com/wp-content/uploads/2018/11/Logo-UNJA-Universitas-Negeri-Jambi-Original-Hitam-Putih.png.webp">
+    <script src="https://kit.fontawesome.com/21fb7efcbe.js" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/21fb7efcbe.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
@@ -59,7 +60,8 @@
                         </li>
                     </ul>
                 </div>
-                <a href="/" class="text-xl normal-case btn btn-ghost text-secondary">Menulis</a>
+                <img src="https://rekreartive.com/wp-content/uploads/2018/11/Logo-UNJA-Universitas-Negeri-Jambi-Original-Hitam-Putih.png.webp"
+                    class="w-10">
             </div>
             <div class="hidden navbar-center lg:flex">
                 <ul class="px-1 menu menu-horizontal">
@@ -91,83 +93,56 @@
     <main>
         {{ $slot }}
     </main>
-    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
-            <div class="md:max-w-md lg:col-span-2">
-                <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+
+    <footer class="px-3 pt-4 lg:px-9">
+        <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div class="sm:col-span-2">
+                <a href="/" class="inline-flex items-center">
                     <img src="https://rekreartive.com/wp-content/uploads/2018/11/Logo-UNJA-Universitas-Negeri-Jambi-Original-Hitam-Putih.png.webp"
-                        class="w-10" alt="logo">
-                    <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Menulis</span>
+                        alt="logo" class="h-8 w-8">
+                    <span class="ml-2 text-xl font-bold tracking-wide text-gray-800">Menulis Akademik</span>
                 </a>
-                <div class="mt-4 lg:max-w-sm">
+                <div class="mt-6 lg:max-w-xl">
                     <p class="text-sm text-gray-800">
-                        Menulis Akademik dan Ketrampilan Argumentasi adalah kunci untuk mengungkapkan ide-ide secara
+                        Menulis Akademik dan Menulis Argumentasi adalah kunci untuk mengungkapkan ide-ide secara
                         jelas dan persuasif. Di sini, kami memberikan panduan dan sumber daya yang berharga untuk
-                        meningkatkan kemampuan menulis akademik Anda serta mengasah ketrampilan argumentasi yang kuat.
-                    </p>
-                    <p class="mt-4 text-sm text-gray-800">
+                        meningkatkan kemampuan menulis akademik Anda serta mengasah menulis argumentasi yang kuat.
                         Bersama-sama, kita akan mengembangkan keahlian yang diperlukan untuk sukses dalam dunia akademik
                         dan berkomunikasi dengan efektif.
                     </p>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
-                <div>
-                    <p class="font-semibold tracking-wide text-gray-800">Materi</p>
-                    <ul class="mt-2 space-y-2">
-                        <li>
-                            <a href="{{ route('courses.academies') }}"
-                                class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Menulis
-                                Akademik</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('courses.arguments') }}"
-                                class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Menulis
-                                Argumen</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold tracking-wide text-gray-800">Kontak</p>
-                    <ul class="mt-2 space-y-2">
-                        <li>
-                            <a href="https://api.whatsapp.com/send/?phone=085266113072&text&type=phone_number&app_absent=0"
-                                class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Whatsapp</a>
-                        </li>
 
-                    </ul>
-                </div>
+            <div class="flex flex-col gap-2 text-sm">
+                <p class="text-base mb-6 font-bold tracking-wide text-gray-900">Kontak Kami</p>
+                <a href="https://api.whatsapp.com/send/?phone=085266113072&text&type=phone_number&app_absent=0"><i
+                        class="fa-solid fa-phone"></i> +62 85266113072</a>
+                <a href="https://goo.gl/maps/KkoirM6SEGE1aZAu8"><i class="fa-solid fa-location-dot"></i> Kampus Unja
+                    Mendalo</a>
+            </div>
 
-            </div>
         </div>
-        <div class="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
-            <p class="text-sm text-gray-600">
-                © Created by <a href="https://github.com/adptra01/" class="text-secondary">adptra01</a>, 2023.
-            </p>
-            <div class="flex items-center mt-4 space-x-4 sm:mt-0">
-                <a href="{{ route('login') }}"
-                    class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                    <i class="fa-solid fa-door-open"></i>
-                    <a href="/"
-                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                        <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
-                            <circle cx="15" cy="15" r="4"></circle>
-                            <path
-                                d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z">
-                            </path>
-                        </svg>
+
+        <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+            <p class="text-sm text-gray-600"> © Created by <a href="https://github.com/adptra01/"
+                    class="text-secondary">adptra01</a>, 2023.</p>
+            <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+                <li>
+                    <a href="#"
+                        class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
+                        &amp; Cookies Policy
                     </a>
-                    <a href="/"
-                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                        <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                            <path
-                                d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z">
-                            </path>
-                        </svg>
+                </li>
+                <li>
+                    <a href="/login"
+                        class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Administrator
                     </a>
-            </div>
+                </li>
+            </ul>
         </div>
-    </div>
+
+    </footer>
 </body>
 
 </html>

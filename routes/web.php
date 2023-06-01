@@ -26,6 +26,8 @@ use App\Http\Controllers\ArgumentCategoryController;
 |
 */
 
+
+
 Auth::routes([
     'register' => false,
 ]);
@@ -39,7 +41,6 @@ Route::get('/', function () {
         'tutors' => $tutors,
     ]);
 });
-
 
 
 Route::get('/courses-academies', [HomeController::class, 'academies'])->name('courses.academies');

@@ -12,7 +12,7 @@
                     </p>
                     <h1
                         class="text-3xl text-gray-800 font-bold sm:text-5xl lg:text-6xl lg:leading-tight dark:text-gray-200">
-                        Seni Menulis Akademik <span class="text-secondary">dan Keterampilan Argumentasi</span>
+                        Menulis Akademik <span class="text-secondary">dan Menulis Argumen</span>
                     </h1>
                 </div>
                 <!-- End Title -->

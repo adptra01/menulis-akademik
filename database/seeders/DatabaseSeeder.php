@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use App\Models\Academy;
 use App\Models\Argument;
 use App\Models\ArgumentCategory;
+use App\Models\Personil;
+use App\Models\Tutor;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -17,9 +19,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Academy::factory(10)->create();
-        ArgumentCategory::factory(10)->create();
-        Argument::factory(10)->create();
+        Academy::factory(1)->create();
+        ArgumentCategory::factory(1)->create();
+        Argument::factory(1)->create();
+        Tutor::factory(1)->create();
+        Personil::factory(1)->create();
 
         $this->call([
             AboutSeeder::class,
