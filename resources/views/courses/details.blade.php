@@ -32,7 +32,7 @@
                             </div>
 
                             <article
-                                class="prose prose-poppins text-justify text-base lg:prose-xl prose-image:m-2 prose-image:p-2">
+                                class="prose prose-poppins text-justify text-base lg:prose-xl prose-image:m-2 prose-image:p-2 indent-8">
                                 @if (strip_tags($details->description) != $details->description)
                                     {!! $details->description !!}
                                 @else

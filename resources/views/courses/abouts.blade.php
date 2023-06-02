@@ -18,7 +18,7 @@
         </div>
 
         <!-- Grid -->
-        <div class="max-w-2xl prose px-6 text-justify lg:px-8">
+        <div class="max-w-2xl mx-auto prose px-6 text-justify">
             {!! $abouts->description !!}
         </div>
 

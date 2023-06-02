@@ -5,8 +5,8 @@
             <section
                 class="relative flex items-center justify-center flex-1 py-16 overflow-hidden bg-gray-100 shadow-lg min-h-96 shrink-0 md:py-20 xl:py-48">
                 <!-- image - start -->
-                <img src="/assets/img/logo-unja.svg" loading="lazy" alt="Photo by Fakurian Design"
-                    class="absolute mx-auto inset-0 object-cover object-center w-full h-full" />
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" loading="lazy" alt="Photo by Fakurian Design"
+                    class="absolute  mx-auto inset-0 object-cover object-center w-full h-full" />
                 <!-- image - end -->
 
                 <!-- overlay - start -->
@@ -17,7 +17,8 @@
                 <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
                     <h1 class="mb-8 text-4xl font-bold text-center text-white sm:text-5xl md:mb-12 md:text-6xl">
                         Pusat Penulisan Akademik Universitas Jambi</h1>
-                    <p class="mb-4 text-md font-semibold text-center text-white sm:text-lg md:mb-8">Wadah Untuk Pembelajaran
+                    <p class="mb-4 text-md font-semibold text-center text-white sm:text-lg md:mb-8">Wadah Untuk
+                        Pembelajaran
                         Menulis Akademik dan Menulis Argumen
                     </p>
 
@@ -32,58 +33,42 @@
         </div>
     </div>
 
-    <!-- feature -->
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div class="grid gap-10 lg:grid-cols-2" id="start">
-            <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-                <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
-                    <svg class="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
-                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-miterlimit="10" points=" 8,5 8,1 16,1 16,5" stroke-linejoin="round"></polyline>
-                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-miterlimit="10" points="9,15 1,15 1,5 23,5 23,15 15,15" stroke-linejoin="round">
-                        </polyline>
-                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-miterlimit="10" points="22,18 22,23 2,23 2,18" stroke-linejoin="round">
-                        </polyline>
-                        <rect x="9" y="13" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-miterlimit="10" width="6" height="4"
-                            stroke-linejoin="round"></rect>
-                    </svg>
-                </div>
-                <div class="max-w-xl mb-6">
-                    <h2
-                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                        Misi Kami<br class="hidden md:block" />
-                    </h2>
-                    <p class="text-base text-gray-700 md:text-sm text-md">
-                        Pusat Penulisan Akademik Program Studi Pendidikan Bahasa dan Sastra Indonesia di Universitas
-                        Jambi berfokus membantu mahasiswa Unja untuk mengembangkan Menulis menulis akademik mereka
-                        sambil menjunjung tinggi inklusivitas, kreativitas, dan kolaborasi. Ini adalah tujuan utama kami
-                        untuk menjadi platform yang banyak akal serta produktif dalam melengkapi Tridarma Universitas
-                        yang ada atau Tiga Pilar Pendidikan Tinggi (pengajaran, penelitian dan keterlibatan masyarakat)
-                        untuk mahasiswa. Komitmen kami adalah untuk membantu klien kami dalam mencapai kesuksesan mereka
-                        dalam penulisan akademik, terutama untuk publikasi jurnal.
-                    </p>
+    <!-- Features -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Grid -->
+        <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
+            <div>
+                <img class="rounded-xl"
+                    src="https://images.unsplash.com/photo-1573643808568-4a3c26f3a06b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=900&h=900&q=80"
+                    alt="Image Description">
+            </div>
+            <!-- End Col -->
+
+            <div class="mt-5 sm:mt-10 lg:mt-0">
+                <div class="space-y-6 sm:space-y-8">
+                    <!-- Title -->
+                    <div class="space-y-2 md:space-y-4">
+                        <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200">
+                            Misi Kami
+                        </h2>
+                        <p class="text-gray-500 text-justify">
+                            Pusat Penulisan Akademik Program Studi Pendidikan Bahasa dan Sastra Indonesia di Universitas
+                            Jambi berfokus membantu mahasiswa untuk mengembangkan Menulis menulis akademik mereka
+                            sambil menjunjung tinggi inklusivitas, kreativitas, dan kolaborasi. Ini adalah tujuan utama kami
+                            untuk menjadi platform yang banyak akal serta produktif dalam melengkapi Tridarma Universitas
+                            yang ada atau Tiga Pilar Pendidikan Tinggi (pengajaran, penelitian dan keterlibatan masyarakat)
+                            untuk mahasiswa. Komitmen kami adalah untuk membantu klien kami dalam mencapai kesuksesan mereka
+                            dalam penulisan akademik, terutama untuk publikasi jurnal.
+                        </p>
+                    </div>
+                    <!-- End Title -->
                 </div>
             </div>
-            <div class="flex items-center justify-center -mx-4 lg:pl-8">
-                <div class="flex flex-col items-end px-3">
-                    <img class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-                        src="https://images.unsplash.com/photo-1511250503134-89501c53a815?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kb25lc2lhJTIwc3R1ZGVudHxlbnwwfHwwfHx8MA%3D%3D&auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt="" />
-                    <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-                        src="https://images.unsplash.com/photo-1625111381887-458fce74a923?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGluZG9uZXNpYSUyMHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                        alt="" />
-                </div>
-                <div class="px-3">
-                    <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-                        src="https://images.unsplash.com/photo-1646369505413-216676fef89c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGluZG9uZXNpYSUyMHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                        alt="" />
-                </div>
-            </div>
+            <!-- End Col -->
         </div>
+        <!-- End Grid -->
     </div>
+    <!-- End Features -->
 
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -146,7 +131,7 @@
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <!-- Title -->
         <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Personil Kami</h2>
+            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Pengelola</h2>
             <p class="mt-1 text-gray-600 dark:text-gray-400">Bersama tim yang berpengalaman dan berdedikasi</p>
         </div>
         <!-- End Title -->
@@ -199,8 +184,8 @@
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <!-- Title -->
         <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Pengajar Kami</h2>
-            <p class="mt-1 text-gray-600 dark:text-gray-400">Belajar dengan tutor berpengalaman di situs kami</p>
+            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Mentor</h2>
+            <p class="mt-1 text-gray-600 dark:text-gray-400">Belajar dengan mentor berpengalaman di situs kami</p>
         </div>
         <!-- End Title -->
 

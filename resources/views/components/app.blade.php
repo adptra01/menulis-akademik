@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? '' }} Page - Akademik Menulis</title>
     <link rel="icon"
-        href="https://rekreartive.com/wp-content/uploads/2018/11/Logo-UNJA-Universitas-Negeri-Jambi-Original-Hitam-Putih.png.webp">
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Logo_Universitas_Jambi.jpg/588px-Logo_Universitas_Jambi.jpg">
     <script src="https://kit.fontawesome.com/21fb7efcbe.js" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/21fb7efcbe.js" crossorigin="anonymous"></script>
@@ -60,7 +60,7 @@
                         </li>
                     </ul>
                 </div>
-                <img src="https://rekreartive.com/wp-content/uploads/2018/11/Logo-UNJA-Universitas-Negeri-Jambi-Original-Hitam-Putih.png.webp"
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Logo_Universitas_Jambi.jpg/588px-Logo_Universitas_Jambi.jpg"
                     class="w-10">
             </div>
             <div class="hidden navbar-center lg:flex">
@@ -94,12 +94,12 @@
         {{ $slot }}
     </main>
 
-    <footer class="px-3 pt-4 lg:px-9">
-        <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+    <footer class="px-3 pt-4 lg:px-9 ">
+        <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 mx-auto">
 
             <div class="sm:col-span-2">
                 <a href="/" class="inline-flex items-center">
-                    <img src="https://rekreartive.com/wp-content/uploads/2018/11/Logo-UNJA-Universitas-Negeri-Jambi-Original-Hitam-Putih.png.webp"
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Logo_Universitas_Jambi.jpg/588px-Logo_Universitas_Jambi.jpg"
                         alt="logo" class="h-8 w-8">
                     <span class="ml-2 text-xl font-bold tracking-wide text-gray-800">Menulis Akademik</span>
                 </a>
