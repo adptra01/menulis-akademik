@@ -23,7 +23,6 @@ class PersonilController extends Controller
             'slug' => Str::slug($request->name.rand()),
             'image' => $request->image,
             'position' => $request->position,
-            'description' => $request->description,
         ]);
 
         return back()->with('success', 'New person added successfully');
@@ -47,7 +46,6 @@ class PersonilController extends Controller
         $personil->name = $request->name;
         $personil->image = $request->image;
         $personil->position = $request->position;
-        $personil->description = $request->description;
         $personil->save();
 
         return redirect()->route('personil')->with('success', 'Person has updated.');

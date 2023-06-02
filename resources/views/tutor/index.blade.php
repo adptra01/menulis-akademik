@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name="title">Tutors Team</x-slot>
+    <x-slot name="title">Tim Mentor</x-slot>
     <div class="card pt-3 mb-3">
         <div class="row">
             <div class="col-sm-5">
@@ -59,7 +59,6 @@
                                     <th>foto</th>
                                     <th>Nama tutor</th>
                                     <th>Position</th>
-                                    <th>Pesan</th>
                                     <th>pilihan</th>
                                 </tr>
                             </thead>
@@ -73,7 +72,6 @@
                                         </td>
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->position }}</td>
-                                        <td>{{ $item->description }}</td>
                                         <td>
                                             <div class="d-inline justify-content-center">
                                                 <a class="btn btn-info m-1 btn-sm"

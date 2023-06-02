@@ -27,7 +27,6 @@ class PersonAndTutorRequest extends FormRequest
             'name' => 'required',
             'image' => 'required|url',
             'position' => 'required',
-            'description' => 'required|max:310',
         ];
     }
 }

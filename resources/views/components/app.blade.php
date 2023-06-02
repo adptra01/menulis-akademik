@@ -104,7 +104,7 @@
                     <span class="ml-2 text-xl font-bold tracking-wide text-gray-800">Menulis Akademik</span>
                 </a>
                 <div class="mt-6 lg:max-w-xl">
-                    <p class="text-sm text-gray-800">
+                    <p class="text-sm text-gray-800 text-justify">
                         Menulis Akademik dan Menulis Argumentasi adalah kunci untuk mengungkapkan ide-ide secara
                         jelas dan persuasif. Di sini, kami memberikan panduan dan sumber daya yang berharga untuk
                         meningkatkan kemampuan menulis akademik Anda serta mengasah menulis argumentasi yang kuat.

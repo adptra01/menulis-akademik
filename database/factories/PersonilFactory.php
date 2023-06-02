@@ -21,7 +21,6 @@ class PersonilFactory extends Factory
             'slug' => Str::slug($this->faker->userName()),
             'image' => 'https://source.unsplash.com/random/?course&1',
             'position' => $this->faker->jobTitle(),
-            'description' => $this->faker->paragraph(),
         ];
     }
 }

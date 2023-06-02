@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name="title">Personils Team</x-slot>
+    <x-slot name="title">Tim Pengelola</x-slot>
     @if (session('success'))
         <div class="alert alert-primary alert-dismissible fade show" role="alert">
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -43,7 +43,6 @@
                                     <th>foto</th>
                                     <th>Nama Personil</th>
                                     <th>posisi</th>
-                                    <th>Pesan</th>
                                     <th>pilihan</th>
                                 </tr>
                             </thead>
@@ -57,7 +56,6 @@
                                         </td>
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->position }}</td>
-                                        <td>{{ $item->description }}</td>
                                         <td>
                                             <div class="d-inline justify-content-center">
                                                 <a class="btn btn-info m-1 btn-sm"

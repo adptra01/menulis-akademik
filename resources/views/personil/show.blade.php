@@ -57,10 +57,6 @@
                             @include('personil.edit')
                         </div>
                     </div>
-
-                    <div class="container">
-                        {{ $personil->description }}
-                    </div>
                 </div>
             </div>
         </div>

@@ -56,10 +56,6 @@
                             @include('tutor.edit')
                         </div>
                     </div>
-
-                    <div class="container">
-                        {!! $tutor->description !!}
-                    </div>
                 </div>
             </div>
         </div>

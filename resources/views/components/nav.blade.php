@@ -31,12 +31,12 @@
         <ul class="menu-sub">
             <li class="menu-item">
                 <a href="{{ route('personil') }}" class="menu-link">
-                    <div>Personils Team</div>
+                    <div>Pengelola</div>
                 </a>
             </li>
             <li class="menu-item">
                 <a href="{{ route('tutor') }}" class="menu-link">
-                    <div>Tutors Team</div>
+                    <div>Mentor</div>
                 </a>
             </li>
         </ul>

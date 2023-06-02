@@ -24,7 +24,6 @@ class TutorController extends Controller
             'slug' => Str::slug($request->name.rand()),
             'image' => $request->image,
             'position' => $request->position,
-            'description' => $request->description,
         ]);
 
         return back()->with('success', 'New tutor added successfully');
@@ -46,7 +45,6 @@ class TutorController extends Controller
         $tutor->slug = Str::slug($request->name.rand());
         $tutor->name = $request->name;
         $tutor->position = $request->position;
-        $tutor->description = $request->description;
         $tutor->save();
 
         return redirect()->route('tutor')->with('success', 'Person has updated.');

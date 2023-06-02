@@ -26,14 +26,6 @@
             @enderror
         </div>
     </div>
-    <div class="row">
-        <div class="mb-3 col">
-            <label for="description" class="form-label">Pesan</label>
-            <textarea class="form-control"  placeholder="Enter message tutor" name="description" value="{{ old('description') }}" id="editor" rows="3"></textarea>
-            @error('description')
-                <small class="text-danger">{{ $message }}</small>
-            @enderror
-        </div>
-    </div>
+   
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
